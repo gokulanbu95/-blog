@@ -1,0 +1,42 @@
+{
+  "generator-angm": {
+    "appName": "blog-try-cinema",
+    "angularCookies": true,
+    "angularAnimate": true,
+    "angularSanitize": true,
+    "angularBootstrap": true,
+    "angularMaterial": true,
+    "modules": [
+      {
+        "name": "flimblog"
+      },
+      {
+        "name": "movie1"
+      },
+      {
+        "name": "movie2"
+      },
+      {
+        "name": "movie3"
+      }
+    ],
+    "menu": [
+      {
+        "link": "flimblog",
+        "title": "Flimblog"
+      },
+      {
+        "link": "movie1",
+        "title": "Movie1"
+      },
+      {
+        "link": "movie2",
+        "title": "Movie2"
+      },
+      {
+        "link": "movie3",
+        "title": "Movie3"
+      }
+    ]
+  }
+}

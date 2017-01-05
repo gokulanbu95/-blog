@@ -1,0 +1,84 @@
+<div class="md-padding" flex layout-sm="column">
+    <md-card>
+        <md-card-content>
+            <div layout= "row">
+                <img ng-src="app/assets/images/assassin.jpg" width="150" height="100 ">
+                <h2 class="md-headline"> &nbsp;Review:Assassin’s Creed (2017)</h2> 
+            </div>
+            <h3 class="md-body-2">
+                
+                <p contenteditable="true"  class = "textEditor">
+                    &nbsp;Historically, movie adaptations of video games have got a bad rep. Perhaps the translation of game to movie doesn’t quite mesh, changing an interactive activity into a passive one, or maybe it’s simply because the majority of attempts have been terrible. There are, of course, exceptions to the rule, so where does Assassin’s Creed fit into the spectrum?                
+                </p>
+                
+               
+                <p contenteditable="true"  class = "textEditor1">
+                    NBased on the bestselling game series of the same name, Assassin’s  Creed gives an introduction to new characters so newcomers to the series can jump in without knowing the ins and outs of the vast source material. The whole premise of Assassin’s Creed is to use a person’s DNA to access the memories of their ancestors which gives us two levels to the film. Modern day scenes show Callum Lynch, played by Michael Fassbender, who has been forcably recruited by a company named Abstergo to assist with their research to find an ancient artefact. Callum accesses the memories of his ancestor Aguilar by effectively letting Abstergo plug into his brain, and we’re transported to Spain during the Spanish Inquisition as Callum watches the memories unfurl.
+                </p>
+               
+                <img ng-src="app/assets/images/assassins-creed.jpg" width="1050" height="600 ">
+                &nbsp;
+                
+                <p contenteditable="true"  class = "textEditor2">
+                    It’s the parts set during the Inquisition where Assassin’s  Creed really shines, with breathtaking shots of the beautiful Spanish vistas, and perfectly choreographed action sequences. The trips into the past feel authentic, and are by far the best parts of the whole film. Michael Fassbender gives a great performance as both Callum and Aguilar, getting ample opportunity to show off the seemingly gravity defying stunts the original games are famous for. Combined with director Justin Kurzel’s insistence on using practical effects for the film, there’s a real air of credibility to the whole spectacle of the film, and it helps to immerse the audience in what could be an otherwise potentially exclusive world.
+                </p>
+              
+                
+                <p contenteditable="true"  class = "textEditor3">
+                    It isn’t just Michael Fassbender who gets to shine, as co-star Marion Cotillard also gives a very earnest performance as Sofia, the Abstergo scientist running the research project. Cottilard does her best with what she’s given, as Sofia runs the risk of being a little two-dimensional at times. There’s no semblance of any emotions given to any characters, most notably with Sofia, which makes her decisions in the climax of the film very baffling and at odds with the rest of her actions throughout the film.
+                </p>
+          
+               
+                <p contenteditable="true"  class = "textEditor4">
+                    With so much complex context to unfold before the actual plot of the film can even begin, there was a real danger of over-explaining things before they’d even kicked off. Luckily, Assassin’s Creed doesn’t feel the need to spell things out exactly for its viewers, and gives a very succinct explanation which provides as much details as it needs to without being overly simplified.
+                </p>
+               
+                
+                <p contenteditable="true"  class = "textEditor5">
+                    For everything that Assassin’s  Creed does right, there’s a whole lot that doesn’t quite land. The modern day characters suffer from very little fleshing out. There’s no indication to any motivation for any of these characters, so a lot of time is spent questioning what the driving force behind their actions actually is. There seems to be very little dialogue throughout, which does nothing to help the audience understand the reasoning behind why things are panning out the way they do. The film also seems to suffer from poor sound mixing, with what little dialogue there is often being incoherent and leaving gaps in the plot as you wonder what exactly has just been said.
+                </p>
+               
+                <img ng-src="app/assets/images/assassins-creed-syndicate.jpg" width="1050" height="600 ">
+                &nbsp;
+                
+                <p contenteditable="true"  class = "textEditor6">
+                    While Assassin’s Creed doesn’t shake off the ‘curse of the video game movie’ fully, it is by no means a terrible film. Sure, it isn’t the most groundbreaking film, and can feel a little contrived in places, but at it’s heart it is a thoroughly entertaining action film with some truly wonderful sequences peppered throughout.
+                </p>
+                       
+            </h3>
+             <h3 class="md-header">Comments:</h3> 
+            <h4 class="md-subhead"> good movie...</h4>  
+            <md-input-container class="md-block">
+                <div layout-gt-xs = "row">
+                <form  name="userForm" id="userForm" data-ng-hide="reviewed">
+                    <md-input-container class="md-block" flex-gt-xs>
+                        <label>Your comments...(you can add image also.)</label>
+                         <input type="text" name="message" id="user_input"><br><br/><br>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs> 
+                       <input type="file" name="file" onchange="angular.element(this).scope().photoChanged(this.files)" />
+                    </md-input-container> 
+
+                    <md-button class="md-raised md-primary" type= "submit" ng-click="vm.showInput();" data-ng-model="reviewed">
+                      <ng-md-icon icon="save" size="20"></ng-md-icon> submit
+                    </md-button> 
+
+                </form>               
+
+            </md-input-container>  
+            <md-input-container class="md-block" flex-gt-xs> 
+                <h3 class="md-subheader"> Note: Its working without backend.So image could't be place properly</h3>
+                <h4 class="md-subheader" style="position: black;">
+                    <img id="output"/ width="400" height="200" ng-src="{{ thumbnail.dataUrl }}">
+                    <span id='display' style="color: black;
+                        position: absolute;
+                        font-weight: 100;
+                        left: 0px;
+                        top: 0px;">
+                    </span>
+                </h4> 
+            </md-input-container>
+        </md-card-content>
+    </md-card>
+</div>
