@@ -3955,7 +3955,7 @@ md-option {
     outline: none; }
   md-option .md-text {
     -webkit-touch-callout: none;
-    -webkit-user-select: yellow;
+    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -7734,7 +7734,7 @@ md-tooltip {
 .layout-padding > .flex,
 .layout-padding > .flex-gt-sm,
 .layout-padding > .flex-md {
-  padding: 1px; }
+  padding: 8px; }
 
 .layout-padding-gt-md > *,
 .layout-padding-lg > *,
